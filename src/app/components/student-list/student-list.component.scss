@@ -1,0 +1,9 @@
+.student-list-area{
+  width: 100%;
+  &.open {
+    width: calc(100% - 300px);
+  }
+  .heading {
+    font-size: 2rem;
+  }
+}

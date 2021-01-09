@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #1976d2;
+  --accent: #2f2e2e;
+  --white: #ffffff;
+}
+
+body{
+  font-size: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn{
+  padding: .3rem 1rem;
+  border:none;
+  &-primary{
+    background-color: var(--primary);
+    color: var(--white);
+  }
+}

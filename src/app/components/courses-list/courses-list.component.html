@@ -1,0 +1,12 @@
+<div class="courses-wrapper" [ngClass]="isCourseListOpen ? 'open' : ''">
+  <h2 class="title">Courses</h2>
+  <p>Select courses for this student</p>
+  <ul class="courses-list">
+    <li
+      (click)="selectCourse(course)"
+      *ngFor="let course of courses; let key = index" class="course-item">
+      {{course?.title}}
+    </li>
+  </ul>
+  <span (click)="closeCourseList()" class="close-btn">&times;</span>
+</div>

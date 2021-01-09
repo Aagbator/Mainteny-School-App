@@ -1,0 +1,14 @@
+<div class="card" [ngClass]="!isCardExpanded ? 'closed' : ''">
+  <div class="card-header" (click)="toggleCardOpen()">
+    <span class="title">{{student.fullName}}</span>
+    <span class="count">{{student?.courses?.length}} courses</span>
+  </div>
+  <div class="card-details">
+    <ul class="course-list">
+      <li *ngFor="let course of student?.courses">{{course?.title}}</li>
+    </ul>
+    <div class="course-action">
+      <button (click)="openCouseList(student)" class="btn btn-primary">Add Course</button>
+    </div>
+  </div>
+</div>

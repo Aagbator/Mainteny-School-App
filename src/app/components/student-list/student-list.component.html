@@ -1,0 +1,7 @@
+<div class="student-list-area"  [ngClass]="isCourseListOpen ? 'open' : ''">
+  <h1 class="heading">List of Students</h1>
+  <div class="card-container">
+    <app-student-card *ngFor="let student of students; let i = index" [student]="student">
+    </app-student-card>
+  </div>
+</div>
